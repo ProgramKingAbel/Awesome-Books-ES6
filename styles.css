@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.all-books {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  border: 2px solid rgb(156, 155, 155);
+}
+
+.book {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem;
+}
+
+.book:nth-child(even) {
+  background-color: gray;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-book,
+.add-area {
+  width: 85%;
+  margin: 0.5rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.site-head {
+  padding: 1rem;
+}
+
+.add-area h2 {
+  align-self: center;
+}
+
+.add-area hr {
+  width: 90px;
+  border: 1px solid black;
+  align-self: center;
+}
+
+.add-area button,
+.remove {
+  align-self: flex-end;
+  border: 2px solid black;
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
+
+/* Styling NavBar */
+nav {
+  padding: 1rem;
+}
+
+nav .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid black;
+  padding: 0.5rem;
+}
+
+nav .top .logo {
+  color: black;
+}
+
+nav .menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav .menu ul hr {
+  height: 40px;
+}
+
+nav .menu ul .menu-link {
+  color: black;
+}
+
+nav .menu ul .menu-link:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+nav .bottom {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+footer {
+  width: 85%;
+  margin: 1rem auto;
+  border: 3px solid black;
+  padding: 0.5rem;
+}
+
+.active {
+  display: none;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Awesome Books</title>
+</head>
+<body>
+  <header>
+
+    <nav>
+      <div class="top">
+        <a href="#" onclick="window.location.reload()" class="logo">Awesome Books</a>
+        <div class="menu">
+          <ul>
+          <li class="menu-item"><a href="#" class="menu-link">List</a></li>
+          <hr />
+          <li class="menu-item"><a href="#" class="menu-link">Add New</a></li>
+          <hr />
+          <li class="menu-item"><a href="#" class="menu-link">Contact</a></li>
+        </ul>
+        </div>
+      </div>
+      
+      <div class="bottom">
+        <div class="date">
+        <span id="day">day</span>
+        <span id="daynum">00</span>
+        <span id="month">month</span>
+        <span id="year">0000</span>
+      </div>
+      <div class="current-time"></div>
+    </div>
+    </nav>
+  </header>
+
+<section>
+  <div class="wrapper">
+    <h1 class="site-head">All Awesome books</h1>
+    <div class="all-books"></div> 
+    </div>
+</section>
+
+<section >
+  <div class="add-area" id="add-area">
+  <hr />
+  <h2>Add a new book</h2>
+    <form class="add-book" id="add-book">
+      <input type="text" name="title" id="title" placeholder="Title" required>
+      <input type="text" name="author" id="author" placeholder="Author" required>
+      <button type="submit" id="submit">Add</button>
+  </form>
+</div>
+</section>
+
+
+  <section >
+    <div class="contact" id="contact">
+    <h2>Contact Information</h2>
+    <p>Do you have any questions or you just want to say "Hello" <br /> You can reach out to us!</p>
+    <ul>
+      <li><p>Our email: mail@mail.com</p></li>
+      <li><p>Our Phone Number: 004566543322</p></li>
+      <li><p>Our address: Streetname 33, 4567 City, Country</p></li>
+    </ul>
+  </div>
+  </section>
+
+
+  <footer>
+    <p>Copyright ...</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
