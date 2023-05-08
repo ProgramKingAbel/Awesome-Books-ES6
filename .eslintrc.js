@@ -15,10 +15,14 @@ module.exports = {
     'no-shadow': 'off',
     'no-param-reassign': 'off',
     'eol-last': 'off',
+    'import/extensions': [
+      1,
+      {
+        js: 'always',
+        json: 'always',
+      },
+    ],
   },
-  ignorePatterns: [
-    'dist/',
-    'build/',
-  ],
+  ignorePatterns: ['dist/', 'build/'],
 
 };
