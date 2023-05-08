@@ -7,7 +7,7 @@ const currentTime = document.querySelector('.current-time');
 const dateTime = DateTime.now().toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
 currentTime.innerHTML = dateTime;
 
- const goToSection = (i) => {
+const goToSection = (i) => {
   const contents = document.getElementsByTagName('section');
   for (let x = 0; x < contents.length; x += 1) {
     if (i !== x) {
@@ -16,17 +16,17 @@ currentTime.innerHTML = dateTime;
       contents[x].classList.remove('active');
     }
   }
-}
+};
 
 // navigation to display specific sections of the page
- const disappear = () => {
+const disappear = () => {
   const links = document.querySelectorAll('.menu-link');
   links.forEach((lk, i) => {
     lk.addEventListener('click', () => {
       goToSection(i);
     });
   });
-}
+};
 
 // Event to display books
 document.addEventListener('DOMContentLoaded', library.showBooks);
@@ -62,7 +62,7 @@ const activateDelete = () => {
       Store.removeBook(i);
     });
   });
-}
+};
 
 document.addEventListener('DOMContentLoaded', () => {
   activateDelete();
